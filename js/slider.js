@@ -4,13 +4,13 @@ const menuSwiper = new Swiper(".menu-swiper", {
   // centeredSlides: true,
   loop: true,
   autoplay: {
-    delay: 3400,        // 3秒ごとに切り替え
+    delay: 5600,        // 3秒ごとに切り替え
     disableOnInteraction: false,
   },
   spaceBetween: 10,
   grabCursor: true,
   effect: 'slide',
-  speed: 800,
+  speed: 400,
 
   // 画面幅によって設定を変える
   breakpoints: {
