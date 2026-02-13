@@ -3,15 +3,20 @@
 
 @media screen and (min-width: 320px) {
   /* スマホ用レイアウト 320px以上の範囲に収めるデザインはこの中に記述 */
-  #strengths,
-  #availability,
-  #review {
-    scroll-margin-top: 70px;
+
+
+  /* scrollを押した際の位置 */
+  #news {
+    scroll-margin-top: 160px;
   }
 
   /*==============================================================
     　　ヒーロー
   ==============================================================*/
+  .hero {
+    position: relative;
+  }
+
   .hero__image {
     width: 100%;
     height: 568px;
@@ -24,6 +29,40 @@
     height: 100%;
     object-fit: cover;
     object-position: 45% 50%;
+  }
+
+  .scroll-box {
+    position: absolute;
+    right: auto;
+    bottom: 40px;
+    left: -1px;
+    display: flex;
+    flex-direction: column;
+    width: 40px;
+    height: auto;
+    line-height: 40px;
+    align-items: center;
+  }
+
+  .scroll-box a {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    font-family: var(--font-en);
+    font-size: 12px;
+    font-weight: 400;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+  }
+
+  .scroll-box:after {
+    display: block;
+    width: 1px;
+    height: 75px;
+    margin-top: 5px;
+    background: #000;
+    content: '';
+    transform: translateX(2px);
   }
 
 
@@ -63,6 +102,7 @@
   }
 
   .news-item__title {
+    font-family: var(--font-base);
     font-size: 12px;
     margin-top: 10px;
     font-weight: 400;
@@ -372,7 +412,7 @@
 
   .menu .more-btn {
     width: fit-content;
-    margin: 22px 20px 0 auto;
+    margin: 24px 20px 0 auto;
     text-align: right;
     display: flex;
   }
@@ -413,7 +453,6 @@
   }
 
   .before-after-swiper {
-    margin-top: 8px;
     margin: 8px 20px 0;
   }
 
@@ -659,10 +698,6 @@
 
 
 
-
-
-
-
 }
 
 
@@ -671,16 +706,299 @@
   .sp-only {
     display: none;
   }
-
-  #strengths,
-  #availability,
-  #review {
-    scroll-margin-top: 40px;
-  }
   /*==============================================================
     　　TB_ヒーロー
   ==============================================================*/
-  
+  .hero__image {
+    height: 670px;
+    padding: 60px 60px 70px;
+  }
+
+  .scroll-box {
+    bottom: 40px;
+    left: 5px;
+  }
+
+  .scroll-box a {
+    font-size: 13px;
+  }
+
+  .scroll-box:after {
+    height: 90px;
+    margin-top: 10px;
+  }
+
+
+  /*==============================================================
+    　　TB_NEWS
+  ==============================================================*/
+  .news-inner {
+    transform: translateY(40px);
+    margin: 0 40px;
+    padding: 30px;
+    grid-template-columns: 80px auto auto;
+  }
+
+  .news-title {
+    margin-right: 16px;
+    font-size: 11px;
+    height: 22px;
+  }
+
+  .news-item__date {
+    font-size: 12px;
+  }
+
+  .news-item__title {
+    font-size: 13px;
+  }
+
+  .news .more-btn {
+    display: inline-block;
+    grid-column: 3;
+    grid-row: 2;
+    margin-top: 16px;
+    width: fit-content;
+    margin: 10px 0 0 auto;
+  }
+
+  /*==============================================================
+    　　TB_セクション共通
+  ==============================================================*/
+  /* ボタン */
+  .more-btn {
+    font-size: 11.5px;
+    padding-left: 24px;
+  }
+
+  .more-btn:before {
+    width: 13px;
+  }
+
+  /* セクションタイトル */
+  .section-title__en {
+    font-size: 34px;
+  }
+
+  .section-title__ja {
+    font-size: 12px;
+  }
+
+  /* 見出し・テキスト */
+  .lead-title {
+    font-size: 16px;
+    padding-bottom: 16px;
+  }
+
+  .lead-text {
+    font-size: 13px;
+  }
+
+  /*==============================================================
+    　　TB_ABOUT
+  ==============================================================*/
+  .about {
+    padding: 100px 0 150px;
+    margin-bottom: -68px;
+  }
+
+  .about-inner {
+    margin: 0 40px;
+  }
+
+  .about .lead-title {
+    margin-top: 44px;
+  }
+
+  .about .lead-text {
+    padding-bottom: 24px;
+  }
+
+  .about-image:before {
+    transform: translate(-10px, -10px);
+  }
+
+  /*==============================================================
+    　　TB_MENU
+  ==============================================================*/
+  .menu {
+    padding-bottom: 100px;
+  }
+
+  .menu-inner__top {
+    padding: 60px 0 55px;
+  }
+
+  .menu-lead {
+    margin: 0 10px 0 40px;
+    padding: 35px 25px;
+  }
+
+  .menu-lead::before {
+    transform: translate(10px, -10px);
+  }
+
+  /* 画像 */
+  .menu-image {
+    margin: -50px 60px 0 0;
+  }
+
+  .menu-image:before {
+    transform: translate(10px, 10px);
+  }
+
+  /*==============　スライド　===============*/
+  .menu-swiper {
+    margin: 0 40px;
+  }
+
+  .menu-label {
+    top: -20px;
+    right: -2px;
+    width: 62px;
+    height: 50px;
+    font-size: 32px;
+    padding-top: 4px;
+  }
+
+  .menu-slide__title {
+    font-size: 16px;
+  }
+
+  .menu-slide__text {
+    font-size: 13px;
+    padding-top: 16px;
+  }
+
+  .menu .more-btn {
+    margin: 40px 40px 0 auto;
+  }
+
+
+  /*==============================================================
+    　　TB_BEFORE/AFTER
+  ==============================================================*/
+  .before-after {
+    padding-bottom: 120px;
+  }
+
+  .before-after-swiper {
+    margin: 30px 40px 0;
+  }
+
+  .before-after-slide__image {
+    width: 364px;
+    height: 364px;
+  }
+
+  /* 右矢印 */
+  .swiper-button-next img {
+    width: 44px;
+    height: 44px;
+  }
+
+  /* 左矢印 */
+  .swiper-button-prev img {
+    width: 44px;
+    height: 44px;
+  }
+
+  /* 画像 */
+  .about-image {
+    margin-top: 40px;
+    aspect-ratio: 647 / 364;
+  }
+
+  /*==============================================================
+    　　TB_FLOW
+  ==============================================================*/
+  .flow {
+    margin-bottom: 100px;
+  }
+
+  .flow-inner {
+    padding: 40px 0 60px;
+  }
+
+  .flow-lead {
+    margin: 0 40px 0 10px;
+    padding: 35px 25px;
+  }
+
+  .flow-lead::before {
+    transform: translate(-10px, -10px);
+  }
+
+  /* 画像 */
+  .flow-image {
+    margin: -50px 0 0 60px;
+  }
+
+  .flow-image:before {
+    transform: translate(-10px, 10px);
+  }
+
+  /*==============================================================
+    　　TB_CONTACT
+  ==============================================================*/
+  .contact {
+    padding-bottom: 90px;
+  }
+
+  .contact-inner {
+    width: calc(100% - 80px);
+    margin: 30px auto 0;
+  }
+
+  .contact-inner dl {
+    padding: 45px 35px 45px;
+  }
+
+  .contact-title {
+    font-size: 18px;
+    margin-bottom: 22px;
+  }
+
+  .contact-item {
+    max-width: 369px;
+    margin: 0 auto;
+  }
+
+  .item-tel {
+    padding: 20px 8px 22px 0;
+  }
+
+  .contact-item a {
+    column-gap: 12px;
+  }
+
+  .item-tel svg {
+    width: 26px !important;
+    height: 27px !important;
+    margin-top: 3px;
+  }
+
+  .contact-tel__time {
+    font-size: 12px;
+  }
+
+  .contact-tel__num {
+    font-size: 22px;
+    margin-top: 8px;
+  }
+
+  .item-line a {
+    font-size: 21.5px;
+    padding: 25px 8px 25px 0;
+  }
+
+  .item-line img {
+    height: 20px;
+    margin-right: 14px;
+  }
+
+
+
 
 }
 

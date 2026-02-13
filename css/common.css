@@ -55,7 +55,6 @@ html {
   .tb-nav,
   .pc-only,
   .sp-tb-none,
-  .site-nav--pc,
   .pc-big-only {
     display: none;
   }
@@ -94,19 +93,6 @@ html {
     height: 50px;
   }
 
-  .site-header__brand-text {
-    font-weight: 700;
-    line-height: 1.25;
-    margin-top: -3px;
-  }
-  .site-header__brand-text .is-sub {
-    font-size: 7px;
-  }
-  .site-header__brand-text .is-main {
-    font-size: 18px;
-    letter-spacing: 0.16em;
-  }
-
   /* LINE */
   .header__line-link {
     position: fixed;
@@ -122,6 +108,7 @@ html {
   .header__line-link img {
     width: 18px;
     height: 18px;
+    opacity: 0.8;
   }
 
   /* ハンバーガー */
@@ -152,7 +139,7 @@ html {
     background: var(--color-bg-section);
     position: relative;
     opacity: 1;
-    transition: all .5s;
+    /* transition: all 0.1s; */
   }
 
   .hamburger span::after {
@@ -259,6 +246,7 @@ html {
     font-family: var(--font-en);
     font-size: 17px;
     font-weight: 200;
+    letter-spacing: 0.12em;
   }
 
   .site-nav--sp .nav-title__ja {
@@ -396,9 +384,8 @@ html {
   .site-footer__nav-item__sns img {
     width: auto;
     height: 22px;
+    opacity: 0.8;
   }
-
-
 
   /* コピー */
   .site-footer__copy {
@@ -432,27 +419,209 @@ html {
   /*==============================================================
     　　TB_ヘッダー
   ==============================================================*/
-  
+  .header {
+    height: 60px;
+  }
 
+  /* ロゴ */
+  .site-header__brand a {
+    padding: 25px 30px 15px 30px;
+  }
+
+  .site-header__brand-img {
+    height: 70px;
+  }
+
+  /* LINE */
+  .header__line-link {
+    right: 60px;
+    width: 60px;
+    height: 60px;
+  }
+  .header__line-link img {
+    width: 24px;
+    height: 24px;
+  }
+
+  /* ハンバーガー */
+  .hamburger {
+    width: 60px;
+    height: 60px;
+  }
+
+  .hamburger span {
+    width: 22px;
+    margin-right: 3px;
+  }
+
+  .hamburger span::after {
+    width: 16px;
+    top: 7px;
+  }
+
+  .hamburger span::before {
+    width: 28px;
+    top: -7px;
+  }
+
+  .hamburger.active span::after {
+    width: 24px;
+    top: 10px;
+    left: -16px;
+  }
+
+  .hamburger.active span::before {
+    width: 24px;
+    top: 10px;
+    left: -16px;
+  }
+
+  /* メニューのデザイン*/
+  .site-nav--sp .nav-title__en {
+    font-size: 20px;
+  }
+
+  .site-nav--sp .nav-title__ja {
+    font-size: 11px;
+  }
+  /* ロゴ */
+  .container__brand {
+    padding: 30px 40px 40px;
+  }
+  .container__brand-img {
+    height: 70px;
+  }
+
+  .site-nav--sp .nav-item {
+    padding: 0 40px 40px;
+  }
+
+  .site-nav--sp .nav-title__ja {
+    margin-top: 2px;
+  }
+
+  .site-header__address {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .site-header__address__text {
+    padding-left: 40px;
+    font-size: 11px;
+  }
+
+  .site-header__address__tel {
+    padding: 0 0 25px 40px;
+    font-size: 17px;
+    margin-top: 12px;
+    column-gap: 6px;
+  }
+
+  .site-header__address__tel img {
+    height: 18px;
+  }
+
+  /* sns */
+  .site-header__sns-box {
+    background-color: #69530B;
+    padding: 14px 40px 16px;
+  }
+
+  .site-header__sns-box ul {
+    gap: 20px;
+  }
+
+  .site-header__sns-box img {
+    height: 20px;
+  }
+
+
+  /*==============================================================
+    　　TB_フッター
+  ==============================================================*/
+  .site-footer__nav-item__sns {
+    padding: 65px 0;
+    column-gap: 22px;
+  }
+
+  .site-footer__nav-item__sns img {
+    height: 24px;
+  }
+
+  /* コピー */
+  .site-footer__copy {
+    font-size: 11px;
+    padding: 25px;
+  }
 
 }
 
 
 @media screen and (min-width: 1024px) {
   /* パソコン用レイアウト 1024px以上の範囲に収めるデザインはこの中に記述 */
-  .site-nav--sp {
+  /* .site-nav--sp {
     display: none;
-  }
+  } */
 
   .sp-tb-none,
-  .pc-only,
-  .site-nav--pc {
+  .pc-only {
     display: block;
   }
   /*==============================================================
     　　PC_ヘッダー
   ==============================================================*/
-  
+  .header {
+    height: 75px;
+  }
+
+  /* ロゴ */
+  .site-header__brand a {
+    padding: 30px 30px 23px 30px;
+  }
+
+  .site-header__brand-img {
+    height: 75px;
+  }
+
+  /* 電話 */
+  .site-header__tel-link {
+    position: fixed;
+    top: 24px;
+    right: 150px;
+    z-index: 90;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+  }
+
+  /* LINE */
+  .header__line-link {
+    right: 75px;
+    width: 75px;
+    height: 75px;
+  }
+
+  /* ハンバーガー */
+  .hamburger {
+    width: 75px;
+    height: 75px;
+  }
+
+  .hamburger span {
+    width: 22px;
+    margin-right: 3px;
+  }
+
+  .hamburger span::after {
+    width: 15px;
+    top: 7px;
+  }
+
+  .hamburger span::before {
+    width: 30px;
+    top: -7px;
+  }
 
 
 }

@@ -20,8 +20,8 @@ const menuSwiper = new Swiper(".menu-swiper", {
     },
     // 640px以上（タブレットなど）
     640: {
-      slidesPerView: 2.1,
-      spaceBetween: 30,
+      slidesPerView: 1.3,
+      spaceBetween: 40,
       centeredSlides: false,
     },
     // 1024px以上（PC）
@@ -61,9 +61,8 @@ const beforeAfterSwiper = new Swiper(".before-after-swiper", {
     },
     // 640px以上（タブレットなど）
     640: {
-      slidesPerView: 2.1,
-      spaceBetween: 30,
-      centeredSlides: false,
+      // slidesPerView: 2.1,
+      spaceBetween: 40,
     },
     // 1024px以上（PC）
     1024: {
