@@ -23,6 +23,7 @@ body.is-menu-open {
   --color-bg-section: #ECE9E1;
   --color-bg-line: #3A3B3C;
   --color-bg-text: #FBF7E8;
+  --color-bg-menu: #F6F6F6;
   --color-bg-footer: #D7D1BE;
   --color-bg-copy: #333333;
   --color-bg-img: #D9D9D9;
@@ -36,6 +37,7 @@ body.is-menu-open {
 
   /* 線 */
   --color-line-item: #90720F;
+  --color-line-footer: #949495;
 
   /* フォント */
   --font-base: "Noto Sans JP", sans-serif;
@@ -477,13 +479,6 @@ html {
   }
 
   /* メニューのデザイン*/
-  .site-nav--sp .nav-title__en {
-    font-size: 20px;
-  }
-
-  .site-nav--sp .nav-title__ja {
-    font-size: 11px;
-  }
   /* ロゴ */
   .container__brand {
     padding: 30px 40px 40px;
@@ -496,8 +491,13 @@ html {
     padding: 0 40px 40px;
   }
 
+  .site-nav--sp .nav-title__en {
+    font-size: 20px;
+  }
+
   .site-nav--sp .nav-title__ja {
     margin-top: 2px;
+    font-size: 11px;
   }
 
   .site-header__address {
@@ -582,7 +582,7 @@ html {
   }
 
   .site-header__brand-img {
-    height: 75px;
+    height: 80px;
   }
 
   /* 電話 */
@@ -599,7 +599,8 @@ html {
   }
 
   .site-header__tel-link .tel__num {
-    font-size: 20px;
+    font-size: 19px;
+    letter-spacing: 0.05em;
     display: grid;
     grid-template-columns: repeat(2, auto);
     align-items: center;
@@ -613,7 +614,7 @@ html {
   }
 
   .site-header__tel-link .tel__time {
-    font-size: 15px;
+    font-size: 14px;
     padding: 0 20px;
   }
 
@@ -631,20 +632,143 @@ html {
   }
 
   .hamburger span {
-    width: 22px;
+    width: 24px;
     margin-right: 3px;
   }
 
   .hamburger span::after {
-    width: 15px;
+    width: 17px;
     top: 7px;
   }
 
   .hamburger span::before {
-    width: 30px;
+    width: 32px;
     top: -7px;
   }
 
+  /* メニューのデザイン*/
+  /* ロゴ */
+  .container__brand {
+    padding: 30px 40px 20px;
+  }
+
+  .site-nav--sp .nav-item {
+    padding: 0 40px 26px;
+  }
+
+  .site-nav--sp .nav-title__en {
+    font-size: 17px;
+  }
+
+  .site-nav--sp .nav-title__ja {
+    font-size: 9px;
+    margin-top: 0;
+  }
+
+  .site-header__address__text {
+    font-size: 9px;
+  }
+
+  .site-header__address__tel {
+    font-size: 15px;
+  }
+
+  .site-header__address__tel img {
+    height: 17px;
+  }
+
+  /* sns */
+  .site-header__sns-box {
+    padding: 8px 40px 13px;
+  }
+
+  .site-header__sns-box ul {
+    gap: 18px;
+  }
+
+  .site-header__sns-box img {
+    height: 18px;
+  }
+
+
+
+  /*==============================================================
+    　　PC_フッター
+  ==============================================================*/
+  .site-footer__inner {
+    /* padding: 80px 0 75px; */
+    padding: 80px 0;
+    width: calc(100% - 40px);
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 43% 57%;
+  }
+
+  .menu-inner__top {
+    padding-bottom: 60px;
+  }
+
+
+  .site-footer__info {
+    border-right: solid 1px var(--color-line-footer);
+  }
+
+  .site-footer__brand-img {
+    width: auto;
+    height: 80px;
+  }
+
+  .site-footer__address {
+    font-family: var(--font-base);
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 0.15em;
+    line-height: 1.8;
+    margin-top: 10px;
+  }
+  .site-footer__address .text {
+    font-size: 13.5px;
+  }
+
+  .site-footer__nav {
+    display: grid;
+    grid-template-columns: auto auto;
+    max-width: 560px;
+  }
+
+  .site-footer__nav .nav-box-01,
+  .site-footer__nav .nav-box-02 {
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  .site-footer__nav-item {
+    font-family: var(--font-base);
+    font-weight: 300;
+    display: inline-block;
+    font-size: 15.5px;
+    margin: 10px 0 10px 120px;
+    letter-spacing: 0.15em;
+    line-height: 2;
+  }
+
+  .site-footer__nav-item__sns {
+    padding: 0;
+    column-gap: 20px;
+    width: fit-content;
+    margin: 10px 0 10px 120px;
+  }
+
+  .site-footer__nav-item__sns img {
+    height: 26px;
+    padding-top: 3px;
+  }
+
+  /* コピー */
+  .site-footer__copy {
+    font-size: 12px;
+    padding: 30px;
+  }
 
 }
 
@@ -656,7 +780,108 @@ html {
   /*==============================================================
     　　PC-big_ヘッダー
   ==============================================================*/
-  
+  /* メニューのデザイン*/
+  .hamburger.active {
+    width: 100px;
+    height: 100px;
+  }
+
+  .hamburger.active span::before {
+    width: 40px;
+    top: 0px;
+    left: -6px;
+  }
+
+  .hamburger.active span::after {
+    width: 40px;
+    top: 0px;
+    left: -6px;
+  }
+
+  /* ロゴ */
+  .container__brand {
+    padding-bottom: 0;
+  }
+  .container__brand-img {
+    height: 80px;
+  }
+
+  .nav-menu-inner {
+    display: flex;
+    padding: 100px 0 0;
+    width: 100vw;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .nav-list {
+    display: flex;
+    /* column-gap: 60px; */
+  }
+
+  .nav-list-01,
+  .nav-list-02 {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    margin-right: 60px;
+  }
+
+  .site-nav--sp .nav-item {
+    padding: 0 0 30px;
+  }
+
+  .site-nav--sp .nav-title__en {
+    font-size: 35px;
+  }
+
+  .site-nav--sp .nav-title__ja {
+    margin-top: 2px;
+    font-size: 14px;
+  }
+
+  /* アドレス */
+  .site-header__address {
+    position: relative;
+    width: fit-content;
+    padding: 0 0 0 40px;
+  }
+
+  .site-header__address__text {
+    padding-left: 0;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.18em;
+    line-height: 1.8;
+    margin-top: -4px;
+  }
+
+  .site-header__address__tel {
+    padding: 0;
+    margin-top: 16px;
+    font-size: 32px;
+    letter-spacing: 0.07em;
+  }
+
+  .site-header__address__tel img {
+    height: 38px;
+  }
+
+  /* sns */
+  .site-header__sns-box {
+    padding: 0;
+    margin-top: 20px;
+    width: fit-content;
+    background-color: var(--color-bg-sub);
+  }
+
+  .site-header__sns-box ul {
+    gap: 23px;
+  }
+
+  .site-header__sns-box img {
+    height: 23px;
+  }
+
 
   /*==============================================================
     　　PC-big_フッター
@@ -670,5 +895,20 @@ html {
   .site-footer__tel-link:hover,
   .site-footer__nav-item:hover span {
     opacity: 0.65;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  /* PC全画面用レイアウト 1600px以上の範囲に収めるデザインはこの中に記述 */
+  /*==============================================================
+    　　PC-big_ヘッダー
+  ==============================================================*/
+  /* メニューのデザイン*/
+  .nav-menu-inner {
+    max-width: 1400px;
+  }
+
+  .nav-list-01, .nav-list-02 {
+    margin-right: 150px;
   }
 }

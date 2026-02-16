@@ -105,8 +105,8 @@
     font-family: var(--font-base);
     font-size: 12px;
     margin-top: 10px;
-    font-weight: 400;
-    letter-spacing: 0.25em;
+    font-weight: 350;
+    letter-spacing: 0.2em;
     line-height: 1.9;
   }
 
@@ -818,6 +818,12 @@
     transform: translate(-10px, -10px);
   }
 
+  /* 画像 */
+  .about-image {
+    margin-top: 40px;
+    aspect-ratio: 647 / 364;
+  }
+
   /*==============================================================
     　　TB_MENU
   ==============================================================*/
@@ -903,11 +909,6 @@
     height: 44px;
   }
 
-  /* 画像 */
-  .about-image {
-    margin-top: 40px;
-    aspect-ratio: 647 / 364;
-  }
 
   /*==============================================================
     　　TB_FLOW
@@ -997,9 +998,6 @@
     margin-right: 14px;
   }
 
-
-
-
 }
 
 
@@ -1008,6 +1006,415 @@
   /*==============================================================
     　　PC_ヒーロー
   ==============================================================*/
+  .hero__image {
+    height: 750px;
+    padding: 0 75px;
+    margin: 75px 0 90px;
+  }
+
+  .scroll-box {
+    bottom: -54px;
+    left: auto;
+    right: 82px;
+  }
+
+  .scroll-box a {
+    display: inline-block;
+    width: 54px;
+    height: 200px;
+    padding-right: 14px;
+    padding-left: 8px;
+    border-left: 1px solid #000;
+    font-size: 12px;
+  }
+
+  .scroll-box:after {
+    display: none;
+  }
+
+  /*==============================================================
+    　　PC_NEWS
+  ==============================================================*/
+  .news {
+    height: 205px;
+    padding-top: 16px;
+  }
+
+  .news-inner {
+    padding: 30px 0;
+    grid-template-columns: 135px 170px auto 195px;
+    width: calc(100% - 40px);
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+
+  .news-title {
+    grid-column: 1;
+    grid-row: 1;
+    font-size: 12px;
+    width: 100px;
+    height: 24px;
+    padding: 0 10px;
+    margin: 0 0 0 auto;
+  }
+
+  .news-item__date {
+    grid-column: 2;
+    grid-row: 1;
+    font-size: 17px;
+    text-align: center;
+  }
+
+  .news-link {
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  .news-item__title {
+    margin: 0;
+    font-size: 16px;
+  }
+
+  .news .more-btn {
+    grid-column: 4;
+    grid-row: 1;
+    margin-top: 0;
+    margin-right: 40px;
+  }
+
+  /*==============================================================
+    　　PC_セクション共通
+  ==============================================================*/
+  /* ボタン */
+  .more-btn {
+    font-size: 15px;
+    padding-left: 33px;
+  }
+
+  .more-btn:before {
+    width: 17px;
+  }
+
+  /* セクションタイトル */
+  .section-title__en {
+    font-size: 45px;
+  }
+
+  .section-title__ja {
+    font-size: 14px;
+  }
+
+  /* 見出し・テキスト */
+  .lead-title {
+    font-size: 27px;
+    padding-bottom: 26px;
+    line-height: 1.6;
+  }
+
+  .lead-text {
+    font-size: 15px;
+    line-height: 1.9;
+  }
+
+  /*==============================================================
+    　　PC_ABOUT
+  ==============================================================*/
+  .about {
+    padding: 150px 0 120px;
+    margin-bottom: 0;
+  }
+  .about-inner {
+    width: calc(100% - 40px);
+    max-width: 1300px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding-top: 65px;
+  }
+
+  .about-lead {
+    padding-left: 50px;
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .about .lead-title {
+    margin-top: -15px;
+  }
+
+  .about .lead-text {
+    padding-bottom: 34px;
+  }
+
+  /* 画像 */
+  .about-image {
+    grid-column: 1;
+    grid-row: 1;
+    max-height: 364px;
+    aspect-ratio: 647 / 364;
+    margin-top: 0;
+  }
+
+  /*==============================================================
+    　　PC_MENU
+  ==============================================================*/
+  .menu {
+    padding: 120px 0 200px;
+    width: calc(100% - 40px);
+    max-width: 1300px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .menu::after {
+    position: absolute;
+    right: -75px;
+    bottom: 150px;
+    display: block;
+    width: 105vw;
+    height: 460px;
+    background: var(--color-bg-menu);
+    content: "";
+    z-index: -1;
+  }
+
+  .menu-inner__top {
+    position: relative;
+    /* display: flex; */
+    margin-top: 55px;
+    width: 100%;
+    padding: 0 0 40px;
+    justify-content: space-between;
+    align-items: flex-start;
+    display: grid;
+    grid-template-columns: 60% 40%;
+  }
+
+  .menu-lead {
+    position: relative;
+    z-index: 10;
+    /* width: 60%; */
+    margin: 70px -65px 0 0;
+    padding: 50px 50px;
+  }
+
+  .menu-lead::before {
+    transform: translate(-10px, -10px);
+  }
+
+  /* 画像 */
+  .menu-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 48%;
+    max-height: 364px;
+    margin: 0;
+  }
+
+  /*==============　スライド　===============*/
+  .menu-swiper {
+    margin: 0;
+    padding-top: 36px;
+  }
+
+  .menu-slide__image {
+    aspect-ratio: 16 / 9.6;
+  }
+
+  .menu-label {
+    top: -35px;
+    right: -1px;
+    width: 82px;
+    height: 70px;
+    font-size: 40px;
+    padding-top: 4px;
+  }
+
+  .menu-slide__title {
+    font-size: 19px;
+  }
+
+  .menu-slide__text {
+    font-size: 13.5px;
+    padding-top: 16px;
+  }
+
+  .menu .more-btn {
+    margin: 48px 3px 0 auto;
+  }
+
+  /*==============================================================
+    　　PC_BEFORE/AFTER
+  ==============================================================*/
+  .before-after {
+    padding-bottom: 140px;
+  }
+
+  .before-after .section-title {
+    top: -22px;
+  }
+
+  .before-after-swiper {
+    width: calc(100% - 40px);
+    max-width: 1300px;
+    margin: 36px auto 0;
+  }
+
+  .before-after .swiper-slide {
+    padding: 0 80px;
+    margin-bottom: 16px;
+  }
+
+  .before-after-slide__image {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1 / 1;
+  }
+
+  .before-after:after {
+    height: 273px;
+  }
+
+  /* 右矢印 */
+  .swiper-button-next img {
+    display: none;
+  }
+
+  /* 左矢印 */
+  .swiper-button-prev img {
+    display: none;
+  }
+
+  /*==============================================================
+    　　PC_FLOW
+  ==============================================================*/
+  .flow {
+    margin-bottom: 150px;
+  }
+
+  .flow .section-title {
+    top: -22px;
+  }
+
+  .flow-inner {
+    position: relative;
+    /* display: flex; */
+    width: 100%;
+    padding: 0 0 80px;
+    justify-content: space-between;
+    align-items: flex-start;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    width: calc(100% - 40px);
+    max-width: 1300px;
+    margin: 55px auto 0;
+  }
+
+  .flow-lead {
+    position: relative;
+    z-index: 10;
+    margin: 0 -65px 0 0;
+    padding: 50px;
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .flow-lead::before {
+    transform: translate(10px, -10px);
+  }
+
+  .flow .more-btn {
+    margin-top: 30px;
+  }
+
+  /* 画像 */
+  .flow-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 48%;
+    max-height: 364px;
+    margin: 0;
+    margin-top: 70px;
+  }
+
+  .flow-image img {
+    width: 100%;
+    height: 100%;
+  }
+
+
+  /*==============================================================
+    　　PC_CONTACT
+  ==============================================================*/
+  .contact {
+    padding-bottom: 145px;
+  }
+
+  .contact .section-title {
+    top: -22px;
+  }
+
+  .contact-inner {
+    width: calc(100% - 40px);
+    max-width: 960px;
+    margin: 65px auto 0;
+  }
+
+  .contact-inner ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .contact-tel-box {
+    border-bottom: none;
+    border-right: 1px solid var(--color-line-item);
+  }
+
+  .contact-inner dl {
+    padding: 50px 30px;
+  }
+
+  .contact-title {
+    font-size: 23px;
+    font-weight: 400;
+    margin-bottom: 25px;
+  }
+
+  .item-tel {
+    padding: 20px 14px 22px 0;
+  }
+
+  .contact-item a {
+    column-gap: 20px;
+  }
+
+  .item-tel svg {
+    width: 28px !important;
+    height: 29px !important;
+    margin-top: 3px;
+  }
+
+  .contact-tel__time {
+    font-size: 14px;
+  }
+
+  .contact-tel__num {
+    font-size: 24px;
+    margin-top: 10px;
+  }
+
+  .item-line a {
+    font-size: 24px;
+    padding: 29px 14px 29px 0;
+  }
+
+  .item-line img {
+    height: 24px;
+    margin-right: 10px;
+    margin-top: 1.9px;
+  }
 
 
 
@@ -1017,26 +1424,26 @@
 @media screen and (min-width: 1400px) {
   /* PC全画面用レイアウト 1400px以上の範囲に収めるデザインはこの中に記述 */
   /*==============================================================
-    　　PC-big_ヒーロー
+    　　PC-big_MENU
   ==============================================================*/
-  .hero__image {
-    height: 100vh;
-    margin-left: 80px;
-    border-radius: 300px 0 0 0;
+  .menu-inner__top {
+    grid-template-columns: 57% 40%;
   }
 
-  .hero-swiper {
-    padding-bottom: 60px;
-    margin-bottom: 40px;
+  .menu-lead {
+    padding: 55px;
   }
 
-  /* ドット */
-  .hero-swiper .swiper-pagination-bullet {
-    width: 14px;
-    height: 14px;
-    margin: 0 18px !important;
+  /*==============================================================
+    　　PC-big_FLOW
+  ==============================================================*/
+  .flow-inner {
+    grid-template-columns: 40% 57%;
   }
 
+  .flow-lead {
+    padding: 55px;
+  }
 
 
 

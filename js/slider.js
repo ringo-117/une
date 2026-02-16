@@ -26,9 +26,11 @@ const menuSwiper = new Swiper(".menu-swiper", {
     },
     // 1024px以上（PC）
     1024: {
-      slidesPerView: 2.5,
-      spaceBetween: 45,
+      slidesPerView: 3,
+      spaceBetween: 50,
       centeredSlides: false,
+      loop: false,
+
 
       /* PCでは動かさない */
       // allowTouchMove: false,
@@ -66,8 +68,8 @@ const beforeAfterSwiper = new Swiper(".before-after-swiper", {
     },
     // 1024px以上（PC）
     1024: {
-      slidesPerView: 2.5,
-      spaceBetween: 45,
+      slidesPerView: 3,
+      spaceBetween: 40,
       centeredSlides: false,
 
       /* PCでは動かさない */
