@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
       document.getElementById('site-header').innerHTML = html;
     });
 
-  fetch('/parts/contact.html')
+  fetch('parts/contact.html')
     .then(res => res.text())
     .then(html => {
       document.getElementById('contact').innerHTML = html;
