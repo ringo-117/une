@@ -121,68 +121,6 @@
     margin-top: 16px;
   }
 
-
-  /*==============================================================
-    　　セクション共通
-  ==============================================================*/
-  /* ボタン */
-  .more-btn {
-    display: inline-block;
-    font-family: var(--font-en);
-    font-size: 11px;
-    line-height: 1.9;
-    align-items: center;
-    position: relative;
-    padding-left: 23px;
-  }
-
-  .more-btn:before {
-    width: 12px;
-    border-top: 1px solid var(--color-line-item);
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-  }
-
-  /* セクションタイトル */
-  .section-title {
-    text-align: center;
-  }
-
-  .section-title__en {
-    font-family: var(--font-en);
-    font-size: 30px;
-    font-weight: 400;
-    line-height: 1.2;
-    letter-spacing: 0.1em;
-  }
-
-  .section-title__ja {
-    font-family: var(--font-serif);
-    font-size: 10px;
-    margin-top: 4px;
-  }
-
-  /* 見出し・テキスト */
-  .lead-title {
-    font-family: var(--font-serif);
-    color: var(--color-text-sub);
-    font-size: 14px;
-    padding-bottom: 15px;
-    line-height: 1.8;
-    letter-spacing: 0.2em;
-  }
-
-  .lead-text {
-    font-family: var(--font-base);
-    font-size: 12.5px;
-    line-height: 2.1;
-    font-weight: 300;
-    letter-spacing: 0.2em;
-  }
-
   /*==============================================================
     　　ABOUT
   ==============================================================*/
@@ -589,115 +527,6 @@
   }
 
 
-  /*==============================================================
-    　　CONTACT
-  ==============================================================*/
-  .contact {
-    padding-bottom: 70px;
-    position: relative;
-  }
-
-  .contact::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-image: url(../img/section/section-contact-bg.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    opacity: 0.2;
-    z-index: -1;
-  }
-
-  .contact .section-title {
-    position: relative;
-    top: -15px;
-  }
-
-  .contact-inner {
-    background-color: var(--color-bg-base);
-    width: calc(100% - 40px);
-    max-width: 1300px;
-    margin: 0 auto;
-    padding: 10px;
-  }
-
-  .contact-inner ul {
-    display: grid;
-    grid-template-rows: auto auto;
-    border: 1px solid var(--color-line-item);
-  }
-
-  .contact-inner dl {
-    padding: 35px 25px 30px;
-  }
-
-  .contact-tel-box {
-    border-bottom: 1px solid var(--color-line-item);
-  }
-
-  .contact-title {
-    font-family: var(--font-serif);
-    color: var(--color-text-sub);
-    font-weight: 500;
-    font-size: 14px;
-    margin-bottom: 15px;
-    line-height: 1.2;
-    text-align: center;
-  }
-
-  .item-tel {
-    border: 1px solid var(--color-line-item);
-    padding: 10px 5px 12px 0;
-    font-family: var(--font-serif);
-    color: var(--color-text-sub);
-  }
-
-  .contact-item a {
-    display: inline-block;
-    display: grid;
-    grid-template-columns: auto auto;
-    align-items: center;
-    justify-content: center;
-    column-gap: 10px;
-  }
-
-  .item-tel svg {
-    width: 23px !important;
-    height: 24px !important;
-    transform: rotate(20deg);
-    margin-top: 2px;
-  }
-
-  .contact-tel__time {
-    /* display: inline-block; */
-    font-size: 9px;
-    line-height: 1;
-  }
-
-  .contact-tel__num {
-    /* display: inline-block; */
-    font-size: 15px;
-    margin-top: 8px;
-    line-height: 1;
-  }
-
-  .item-line a {
-    font-family: var(--font-serif);
-    color: var(--color-text-white);
-    font-size: 14px;
-    background-color: var(--color-bg-sub);
-    padding: 20px 5px 20px 0;
-  }
-
-  .item-line img {
-    width: auto;
-    height: 20px;
-    margin-right: 8px;
-  }
-
-
-
 }
 
 
@@ -762,37 +591,6 @@
     margin: 10px 0 0 auto;
   }
 
-  /*==============================================================
-    　　TB_セクション共通
-  ==============================================================*/
-  /* ボタン */
-  .more-btn {
-    font-size: 11.5px;
-    padding-left: 24px;
-  }
-
-  .more-btn:before {
-    width: 13px;
-  }
-
-  /* セクションタイトル */
-  .section-title__en {
-    font-size: 34px;
-  }
-
-  .section-title__ja {
-    font-size: 12px;
-  }
-
-  /* 見出し・テキスト */
-  .lead-title {
-    font-size: 16px;
-    padding-bottom: 16px;
-  }
-
-  .lead-text {
-    font-size: 13px;
-  }
 
   /*==============================================================
     　　TB_ABOUT
@@ -939,64 +737,7 @@
     transform: translate(-10px, 10px);
   }
 
-  /*==============================================================
-    　　TB_CONTACT
-  ==============================================================*/
-  .contact {
-    padding-bottom: 90px;
-  }
-
-  .contact-inner {
-    width: calc(100% - 80px);
-    margin: 30px auto 0;
-  }
-
-  .contact-inner dl {
-    padding: 45px 35px 45px;
-  }
-
-  .contact-title {
-    font-size: 18px;
-    margin-bottom: 22px;
-  }
-
-  .contact-item {
-    max-width: 369px;
-    margin: 0 auto;
-  }
-
-  .item-tel {
-    padding: 20px 8px 22px 0;
-  }
-
-  .contact-item a {
-    column-gap: 12px;
-  }
-
-  .item-tel svg {
-    width: 26px !important;
-    height: 27px !important;
-    margin-top: 3px;
-  }
-
-  .contact-tel__time {
-    font-size: 12px;
-  }
-
-  .contact-tel__num {
-    font-size: 22px;
-    margin-top: 8px;
-  }
-
-  .item-line a {
-    font-size: 21.5px;
-    padding: 25px 8px 25px 0;
-  }
-
-  .item-line img {
-    height: 20px;
-    margin-right: 14px;
-  }
+  
 
 }
 
@@ -1082,39 +823,6 @@
     margin-right: 40px;
   }
 
-  /*==============================================================
-    　　PC_セクション共通
-  ==============================================================*/
-  /* ボタン */
-  .more-btn {
-    font-size: 15px;
-    padding-left: 33px;
-  }
-
-  .more-btn:before {
-    width: 17px;
-  }
-
-  /* セクションタイトル */
-  .section-title__en {
-    font-size: 45px;
-  }
-
-  .section-title__ja {
-    font-size: 14px;
-  }
-
-  /* 見出し・テキスト */
-  .lead-title {
-    font-size: 27px;
-    padding-bottom: 26px;
-    line-height: 1.6;
-  }
-
-  .lead-text {
-    font-size: 15px;
-    line-height: 1.9;
-  }
 
   /*==============================================================
     　　PC_ABOUT
@@ -1343,80 +1051,6 @@
     width: 100%;
     height: 100%;
   }
-
-
-  /*==============================================================
-    　　PC_CONTACT
-  ==============================================================*/
-  .contact {
-    padding-bottom: 145px;
-  }
-
-  .contact .section-title {
-    top: -22px;
-  }
-
-  .contact-inner {
-    width: calc(100% - 40px);
-    max-width: 960px;
-    margin: 65px auto 0;
-  }
-
-  .contact-inner ul {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .contact-tel-box {
-    border-bottom: none;
-    border-right: 1px solid var(--color-line-item);
-  }
-
-  .contact-inner dl {
-    padding: 50px 30px;
-  }
-
-  .contact-title {
-    font-size: 23px;
-    font-weight: 400;
-    margin-bottom: 27px;
-  }
-
-  .item-tel {
-    padding: 20px 14px 22px 0;
-  }
-
-  .contact-item a {
-    column-gap: 20px;
-  }
-
-  .item-tel svg {
-    width: 28px !important;
-    height: 29px !important;
-    margin-top: 3px;
-  }
-
-  .contact-tel__time {
-    font-size: 14px;
-  }
-
-  .contact-tel__num {
-    font-size: 24px;
-    margin-top: 10px;
-  }
-
-  .item-line a {
-    font-size: 24px;
-    padding: 29px 14px 29px 0;
-  }
-
-  .item-line img {
-    height: 24px;
-    margin-right: 10px;
-    margin-top: 1.9px;
-  }
-
-
 
 
 }
