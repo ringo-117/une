@@ -81,7 +81,6 @@
 
   .news-detail__text-box {
     width: 100%;
-    max-width: 700px;
     margin: 0 auto;
   }
 
@@ -111,8 +110,139 @@
     width: 160px;
   }
 
+}
 
 
+@media screen and (min-width: 640px) {
+  /* タブレット用レイアウト 640px以上の範囲に収めるデザインはこの中に記述 */
+  /*==============================================================
+    　　TB_ニュース一覧
+  ==============================================================*/
+  .news-all {
+    width: 100%;
+    padding: 60px 40px 140px;
+  }
+
+  .news-all__title {
+    font-size: 24px;
+  }
+
+  .news-item {
+    padding: 0 0 20px 15px;
+  }
+
+  .news-item__date {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+
+  .news-item__title {
+    font-size: 15px;
+    margin-top: 15px;
+  }
+
+  /*==============================================================
+    　　TB_ニュース詳細
+  ==============================================================*/
+  .news-detail {
+    width: 100%;
+    padding: 60px 40px 140px;
+  }
+
+  .news-detail__inner {
+    padding: 40px;
+  }
+
+  .news-detail__date {
+    font-size: 12px;
+  }
+
+  .news-detail__title {
+    font-size: 18px;
+    margin: 20px 0 40px;
+    padding: 0 0 35px;
+  }
+
+  .news-detail__text-box p {
+    font-size: 14px;
+  }
+
+  .news-btn {
+    font-size: 11.5px;
+    margin: 80px auto 0;
+  }
+
+  .news-btn a {
+    padding: 18px 20px 14px;
+    width: 200px;
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+  /* パソコン用レイアウト 1024px以上の範囲に収めるデザインはこの中に記述 */
+  /*==============================================================
+    　　PC_ニュース一覧
+  ==============================================================*/
+  /* 画像 */
+  .page-top__image img {
+    object-position: 50% 30%;
+  }
+
+  .news-all {
+    max-width: 960px;
+    padding: 80px 10px 190px;
+  }
+
+  .news-all__title {
+    font-size: 25px;
+  }
+
+
+  /*==============================================================
+    　　PC_ニュース詳細
+  ==============================================================*/
+  .news-detail {
+    max-width: 960px;
+    padding: 80px 0 190px;
+  }
+
+  .news-detail__inner {
+    padding: 50px;
+  }
+
+  .news-detail__title {
+    font-size: 22px;
+  }
+
+  .news-btn {
+    font-size: 14px;
+    margin: 100px auto 0;
+  }
+
+  .news-btn a {
+    padding: 18px 20px 14px;
+    width: 220px;
+  }
+
+
+
+}
+
+@media screen and (min-width: 1400px) {
+  /* PC全画面用レイアウト 1400px以上の範囲に収めるデザインはこの中に記述 */
+  /*==============================================================
+    　　PC-big_ニュース一覧
+  ==============================================================*/
+  /* 画像 */
+  .page-top__image img {
+    object-position: 50% 34%;
+  }
+
+
+  /*==============================================================
+    　　PC-big_ニュース詳細
+  ==============================================================*/
 
 
 

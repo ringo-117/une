@@ -780,6 +780,48 @@ html {
   }
 
   /*==============================================================
+    　　TB_TOP以外__共通
+  ==============================================================*/
+  .top-other-header .site-header__brand a {
+    padding: 8px 0 0 20px;
+  }
+  .top-other-header .site-header__brand-img {
+    height: 52px;
+  }
+
+  /*==============================================================
+    　　TB_ページトップ
+  ==============================================================*/
+  .page-top__image {
+    margin-top: 60px;
+    height: 340px;
+  }
+
+  .page-title {
+    top: 182px;
+    margin-left: 40px;
+  }
+
+  .page-title__en {
+    font-size: 61px;
+  }
+
+  .page-title__ja {
+    font-size: 17px;
+  }
+
+  /*==============　パンくずリスト　===============*/
+  .breadcrumbs {
+    font-size: 12px;
+    top: -26px;
+  }
+
+  .breadcrumbs ol {
+    padding: 16px 25px;
+  }
+
+
+  /*==============================================================
     　　TB_CONTACT
   ==============================================================*/
   .contact {
@@ -1023,6 +1065,47 @@ html {
   .lead-text {
     font-size: 15px;
     line-height: 1.9;
+  }
+
+  /*==============================================================
+    　　PC_TOP以外__共通
+  ==============================================================*/
+  .top-other-header .site-header__brand a {
+    padding: 9px 0 0 25px;
+  }
+  .top-other-header .site-header__brand-img {
+    height: 63px;
+  }
+
+  /*==============================================================
+    　　PC_ページトップ
+  ==============================================================*/
+  .page-top__image {
+    margin-top: 75px;
+    height: 385px;
+  }
+
+  .page-title {
+    top: 210px;
+    margin-left: 150px;
+  }
+
+  .page-title__en {
+    font-size: 80px;
+    letter-spacing: 0.06em;
+  }
+
+  .page-title__ja {
+    font-size: 20px;
+  }
+
+  /*==============　パンくずリスト　===============*/
+  .breadcrumbs {
+    top: -30px;
+  }
+
+  .breadcrumbs ol {
+    padding: 20px 30px;
   }
 
 
