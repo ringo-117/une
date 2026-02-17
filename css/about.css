@@ -143,11 +143,11 @@
     font-weight: 300;
   }
 
-  .map {
+  .map-inner {
     width: 100%;
     height: 345px;
     background-color: var(--color-bg-img);
-    margin-top: 35px;
+    margin-top: 30px;
   }
 
 }
@@ -156,65 +156,67 @@
 @media screen and (min-width: 640px) {
   /* タブレット用レイアウト 640px以上の範囲に収めるデザインはこの中に記述 */
   /*==============================================================
-    　　TB_ニュース一覧
+    　　TB_コンセプト
   ==============================================================*/
-  .news-all {
-    width: 100%;
-    padding: 60px 40px 140px;
+  .concept {
+    padding: 0 40px 85px;
+    margin-top: 80px;
   }
 
-  .news-all__title {
-    font-size: 24px;
-  }
-
-  .news-item {
-    padding: 0 0 20px 15px;
-  }
-
-  .news-item__date {
-    margin-top: 20px;
-    font-size: 14px;
-  }
-
-  .news-item__title {
-    font-size: 15px;
-    margin-top: 15px;
+  .concept-lead {
+    font-size: 16px;
+    margin-top: 40px;
   }
 
   /*==============================================================
-    　　TB_ニュース詳細
+    　　TB_スタッフ
   ==============================================================*/
-  .news-detail {
-    width: 100%;
-    padding: 60px 40px 140px;
+  .staff {
+    padding: 115px 0 135px;
+    max-width: 345px;
+    margin: 0 auto;
   }
 
-  .news-detail__inner {
-    padding: 40px;
+  .staff__image {
+    margin-top: 40px;
   }
 
-  .news-detail__date {
-    font-size: 12px;
+  .staff-info__title {
+    font-size: 28px;
   }
 
-  .news-detail__title {
-    font-size: 18px;
-    margin: 20px 0 40px;
-    padding: 0 0 35px;
+  /*==============================================================
+    　　TB_サロン情報
+  ==============================================================*/
+  .info {
+    padding: 0 0 165px;
   }
 
-  .news-detail__text-box p {
+  .info::before {
+    height: 395px;
+  }
+
+  .info-inner {
+    padding: 0 40px;
+    margin-top: 40px;
+  }
+
+  .info-box {
+    padding: 15px 30px 15px 40px;
+  }
+
+  .info-item {
+    padding: 25px;
+    display: grid;
+    grid-template-columns: 135px auto;
+  }
+
+  .info-box dt {
     font-size: 14px;
   }
 
-  .news-btn {
-    font-size: 11.5px;
-    margin: 80px auto 0;
-  }
-
-  .news-btn a {
-    padding: 18px 20px 14px;
-    width: 200px;
+  .map-inner {
+    margin-top: 20px;
   }
 
 }
@@ -222,49 +224,76 @@
 @media screen and (min-width: 1024px) {
   /* パソコン用レイアウト 1024px以上の範囲に収めるデザインはこの中に記述 */
   /*==============================================================
-    　　PC_ニュース一覧
+    　　PC_コンセプト
   ==============================================================*/
-  /* 画像 */
-  .page-top__image img {
-    object-position: 50% 30%;
+  .concept {
+    margin-top: 100px;
+    padding: 0 40px 115px;
   }
 
-  .news-all {
-    max-width: 960px;
-    padding: 80px 10px 190px;
+  .concept .section-title {
+    top: -22px;
   }
 
-  .news-all__title {
-    font-size: 25px;
+  .concept-lead {
+    text-align: center;
+    font-size: 17.6px;
+    line-height: 2.4;
+    margin-top: 50px;
   }
-
 
   /*==============================================================
-    　　PC_ニュース詳細
+    　　PC_スタッフ
   ==============================================================*/
-  .news-detail {
-    max-width: 960px;
-    padding: 80px 0 190px;
+  .staff {
+    max-width: 400px;
   }
 
-  .news-detail__inner {
-    padding: 50px;
+  .staff__image {
+    margin-top: 55px;
   }
 
-  .news-detail__title {
-    font-size: 22px;
+  /*==============================================================
+    　　PC_サロン情報
+  ==============================================================*/
+  .info {
+    padding: 0 20px 165px;
   }
 
-  .news-btn {
-    font-size: 14px;
-    margin: 100px auto 0;
+  .info .section-title {
+    top: -22px;
   }
 
-  .news-btn a {
-    padding: 18px 20px 14px;
-    width: 220px;
+  .info-inner {
+    background-color: var(--color-bg-base);
+    max-width: 1300px;
+    margin: 40px auto 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0;
   }
 
+  .info-box {
+    padding: 15px 30px 45px 40px;
+    width: 100%;
+  }
+
+  .info-box dt {
+    font-size: 13.5px;
+  }
+
+  .info-box dd {
+    font-size: 12.5px;
+  }
+
+  .map {
+    padding: 30px 40px 30px 30px;
+  }
+
+  .map-inner {
+    height: 100%;
+    margin-top: 0;
+  }
 
 
 }
@@ -272,18 +301,8 @@
 @media screen and (min-width: 1400px) {
   /* PC全画面用レイアウト 1400px以上の範囲に収めるデザインはこの中に記述 */
   /*==============================================================
-    　　PC-big_ニュース一覧
+    　　PC-big_コンセプト
   ==============================================================*/
-  /* 画像 */
-  .page-top__image img {
-    object-position: 50% 34%;
-  }
-
-
-  /*==============================================================
-    　　PC-big_ニュース詳細
-  ==============================================================*/
-
-
+  
 
 }
