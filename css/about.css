@@ -1,0 +1,289 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@media screen and (min-width: 320px) {
+  /* スマホ用レイアウト 320px以上の範囲に収めるデザインはこの中に記述 */
+  /*==============================================================
+    　　コンセプト
+  ==============================================================*/
+  .concept {
+    position: relative;
+    padding: 0 20px 50px;
+    margin-top: 50px;
+  }
+
+  .concept::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(../img/section/section-about.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.16;
+    z-index: -1;
+  }
+
+  .concept .section-title {
+    position: relative;
+    top: -15px;
+  }
+
+  .concept-lead {
+    font-family: var(--font-serif);
+    font-size: 14px;
+    line-height: 2;
+    letter-spacing: 0.18em;
+  }
+
+
+  /*==============================================================
+    　　スタッフ
+  ==============================================================*/
+  .staff {
+    padding: 60px 20px 75px;
+  }
+
+  .staff__image {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    aspect-ratio: 1 / 1;
+    margin-top: 30px;
+  }
+
+  .staff__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 40% 50%;
+  }
+
+  .staff-info__title {
+    font-family: var(--font-serif);
+    font-size: 25px;
+    line-height: 1.2;
+    margin-top: 5px;
+  }
+
+  .staff-info__item dt {
+    font-family: var(--font-en);
+    color: var(--color-text-sub);
+    font-size: 13px;
+    margin-top: 20px;
+    line-height: 2;
+    font-weight: 800;
+  }
+
+  .staff-info__item dd {
+    font-family: var(--font-base);
+    font-size: 13px;
+    margin-top: 5px;
+    line-height: 2;
+    font-weight: 300;
+    letter-spacing: 0.18em;
+  }
+
+  /*==============================================================
+    　　サロン情報
+  ==============================================================*/
+  .info {
+    position: relative;
+    padding: 0 0 75px;
+  }
+
+  .info::before {
+    content: "";
+    position: absolute;
+    height: 270px;
+    inset: 0;
+    background-color: #F6F6F6;
+    z-index: -1;
+  }
+
+  .info .section-title {
+    position: relative;
+    top: -15px;
+    padding: 0;
+  }
+
+  .info-inner {
+    padding: 0 20px;
+  }
+
+  .info-box {
+    font-family: var(--font-base);
+    background-color: var(--color-bg-base);
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .info-item {
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(144, 114, 15, 0.2);
+  }
+
+  .info-item.end {
+    border-bottom: none;
+  }
+
+  .info-box dt {
+    font-size: 15px;
+    color: var(--color-text-sub);
+    letter-spacing: 0.2em;
+    line-height: 2;
+    font-weight: 500;
+  }
+
+  .info-box dd {
+    font-size: 13px;
+    letter-spacing: 0.18em;
+    line-height: 2;
+    font-weight: 300;
+  }
+
+  .map {
+    width: 100%;
+    height: 345px;
+    background-color: var(--color-bg-img);
+    margin-top: 35px;
+  }
+
+}
+
+
+@media screen and (min-width: 640px) {
+  /* タブレット用レイアウト 640px以上の範囲に収めるデザインはこの中に記述 */
+  /*==============================================================
+    　　TB_ニュース一覧
+  ==============================================================*/
+  .news-all {
+    width: 100%;
+    padding: 60px 40px 140px;
+  }
+
+  .news-all__title {
+    font-size: 24px;
+  }
+
+  .news-item {
+    padding: 0 0 20px 15px;
+  }
+
+  .news-item__date {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+
+  .news-item__title {
+    font-size: 15px;
+    margin-top: 15px;
+  }
+
+  /*==============================================================
+    　　TB_ニュース詳細
+  ==============================================================*/
+  .news-detail {
+    width: 100%;
+    padding: 60px 40px 140px;
+  }
+
+  .news-detail__inner {
+    padding: 40px;
+  }
+
+  .news-detail__date {
+    font-size: 12px;
+  }
+
+  .news-detail__title {
+    font-size: 18px;
+    margin: 20px 0 40px;
+    padding: 0 0 35px;
+  }
+
+  .news-detail__text-box p {
+    font-size: 14px;
+  }
+
+  .news-btn {
+    font-size: 11.5px;
+    margin: 80px auto 0;
+  }
+
+  .news-btn a {
+    padding: 18px 20px 14px;
+    width: 200px;
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+  /* パソコン用レイアウト 1024px以上の範囲に収めるデザインはこの中に記述 */
+  /*==============================================================
+    　　PC_ニュース一覧
+  ==============================================================*/
+  /* 画像 */
+  .page-top__image img {
+    object-position: 50% 30%;
+  }
+
+  .news-all {
+    max-width: 960px;
+    padding: 80px 10px 190px;
+  }
+
+  .news-all__title {
+    font-size: 25px;
+  }
+
+
+  /*==============================================================
+    　　PC_ニュース詳細
+  ==============================================================*/
+  .news-detail {
+    max-width: 960px;
+    padding: 80px 0 190px;
+  }
+
+  .news-detail__inner {
+    padding: 50px;
+  }
+
+  .news-detail__title {
+    font-size: 22px;
+  }
+
+  .news-btn {
+    font-size: 14px;
+    margin: 100px auto 0;
+  }
+
+  .news-btn a {
+    padding: 18px 20px 14px;
+    width: 220px;
+  }
+
+
+
+}
+
+@media screen and (min-width: 1400px) {
+  /* PC全画面用レイアウト 1400px以上の範囲に収めるデザインはこの中に記述 */
+  /*==============================================================
+    　　PC-big_ニュース一覧
+  ==============================================================*/
+  /* 画像 */
+  .page-top__image img {
+    object-position: 50% 34%;
+  }
+
+
+  /*==============================================================
+    　　PC-big_ニュース詳細
+  ==============================================================*/
+
+
+
+}
