@@ -239,6 +239,15 @@
     object-position: 50% 34%;
   }
 
+  /*======== アニメーション ========*/
+  .news-item a {
+    transition: all 0.3s ease;
+  }
+
+  .news-item a:hover {
+    opacity: 0.6;
+  }
+
 
   /*==============================================================
     　　PC-big_ニュース詳細

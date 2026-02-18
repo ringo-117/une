@@ -61,6 +61,11 @@ html {
     display: none;
   }
 
+  #before-after,
+  #contact {
+    scroll-margin-top: 120px;
+  }
+
   /*==============================================================
     　　ヘッダー
   ==============================================================*/
@@ -628,6 +633,11 @@ html {
     display: block;
   }
 
+  #before-after,
+  #contact {
+    scroll-margin-top: 160px;
+  }
+
   /*==============================================================
     　　TB_ヘッダー
   ==============================================================*/
@@ -916,6 +926,12 @@ html {
   .pc-none {
     display: none;
   }
+
+  #before-after,
+  #contact {
+    scroll-margin-top: 180px;
+  }
+
   /*==============================================================
     　　PC_ヘッダー
   ==============================================================*/
@@ -1271,6 +1287,12 @@ html {
   .pc-big-only {
     display: block;
   }
+
+  #before-after,
+  #contact {
+    scroll-margin-top: 220px;
+  }
+
   /*==============================================================
     　　PC-big_ヘッダー
   ==============================================================*/
@@ -1377,6 +1399,7 @@ html {
   }
 
   /*======== アニメーション ========*/
+  .site-header__brand a img,
   .top-other-header .site-header__brand a,
   .header__line-link,
   .hamburger,
@@ -1393,6 +1416,7 @@ html {
     transition: all 0.3s ease;
   }
 
+  .site-header__brand a:hover img,
   .top-other-header .site-header__brand a:hover,
   .header__line-link:hover,
   .hamburger:hover,
@@ -1446,13 +1470,17 @@ html {
     　　PC-big_フッター
   ==============================================================*/
   /*======== アニメーション ========*/
+  .site-footer__brand,
   .site-footer__tel-link,
-  .site-footer__nav-item span {
+  .site-footer__nav-item span,
+  .site-footer__nav-item__sns a {
     transition: all 0.3s ease;
   }
 
+  .site-footer__brand:hover,
   .site-footer__tel-link:hover,
-  .site-footer__nav-item:hover span {
+  .site-footer__nav-item:hover span,
+  .site-footer__nav-item__sns a:hover {
     opacity: 0.65;
   }
 }
