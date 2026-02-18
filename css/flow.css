@@ -128,7 +128,55 @@
   /*==============================================================
     　　TB_施術の流れ
   ==============================================================*/
-  
+  .flow {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1360px;
+    margin: 0 auto;
+    padding-bottom: 80px;
+  }
+
+  .flow-block {
+    display: grid;
+    grid-template-columns: 40vw 60vw;
+  }
+
+  /* 画像 */
+  .flow-image {
+    padding: 35px 0 0 25px;
+    width: 59.2vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    aspect-ratio: 460 / 246;
+  }
+
+  .flow-image.right {
+    padding: 35px 25px 0 0;
+    right: 0;
+  }
+
+  .flow-block.right .flow-image {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  /* テキスト */
+  .flow-block__lead {
+    margin: 0;
+    margin-top: 200px;
+    margin: 200px 0 0 auto;
+    width: 47vw;
+    padding: 20px 30px 24px 70px;
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .flow-block__lead.left {
+    margin-top: 200px;
+    padding: 20px 70px 24px 30px;
+    grid-column: 1;
+  }
 
 }
 
@@ -137,7 +185,107 @@
   /*==============================================================
     　　PC_施術の流れ
   ==============================================================*/
-  
+  .flow {
+    margin-top: 60px;
+  }
+
+  .flow-block {
+    padding-bottom: 110px;
+    margin-bottom: 0;
+    max-width: 1360px;
+    /* overflow: hidden; */
+    grid-template-columns: 40% 60%;
+  }
+
+  .flow-block:before {
+    position: absolute;
+    bottom: -175px;
+    left: 50%;
+    display: block;
+    width: 5px;
+    height: 100%;
+    background-image: linear-gradient(to top, rgba(144, 114, 15, 0.77), rgba(144, 114, 15, 0.77) 10px, transparent 10px, transparent 20px);
+    background-repeat: repeat-y;
+    background-size: 5px 20px;
+    content: "";
+    transform: translateX(-50%);
+  }
+
+  .flow-block.end:before {
+    display: none;
+  }
+
+  /* 番号ラベル */
+  .flow-label {
+    width: 145px;
+    padding: 26px 0 15px;
+    top: -55px;
+  }
+
+  .flow-01 .flow-label {
+    top: 0;
+  }
+
+  .flow-label__en {
+    font-size: 14px;
+  }
+
+  .flow-label__num {
+    font-size: 60px;
+    line-height: 1.2;
+  }
+
+  /* 画像 */
+  .flow-image {
+    width: 56.5vw;
+    padding: 0 0 0 30px;
+    aspect-ratio: 3 / 1.76;
+    max-width: 760px;
+    /* position: relative; */
+    /* top: 55px; */
+    /* margin-top: 55px; */
+  }
+
+  .flow-image.image-01 {
+    padding-top: 55px;
+  }
+
+  .flow-image.right {
+    padding: 0 30px 0 0;
+    margin: 0 0 0 auto;
+  }
+
+  /* テキスト */
+  .flow-block__lead {
+    margin-right: 30px;
+    min-height: 365px;
+    width: 45vw;
+    max-width: 611px;
+    padding: 35px 60px 45px 86px;
+    align-content: center;
+  }
+
+  .flow-block__lead.left {
+    margin-left: 30px;
+    padding: 35px 86px 45px 60px;
+  }
+
+  .flow-block__lead:before {
+    transform: translate(-10px, -10px);
+  }
+
+  .flow-block__lead.left:before {
+    transform: translate(10px, -10px);
+  }
+
+  .flow-block__lead-title {
+    font-size: 28px;
+  }
+
+  .flow-block__lead-text {
+    font-size: 16px;
+    margin-top: 20px;
+  }
 
 
 }
@@ -147,7 +295,10 @@
   /*==============================================================
     　　PC-big_施術の流れ
   ==============================================================*/
-  
+  .flow-block {
+    grid-template-columns: 40% 60%;
+    margin-bottom: 4px;
+  }
 
 
 }
