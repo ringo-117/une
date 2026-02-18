@@ -1,0 +1,153 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@media screen and (min-width: 320px) {
+  /* スマホ用レイアウト 320px以上の範囲に収めるデザインはこの中に記述 */
+  /*==============================================================
+    　　施術の流れ
+  ==============================================================*/
+  /* ページトップ画像 */
+  .page-top__image img {
+    object-position: 50% 5%;
+  }
+
+  .flow {
+    padding-bottom: 50px;
+  }
+
+  .flow-block {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    width: 100%;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  /* 番号ラベル */
+  .flow-label {
+    font-family: var(--font-en);
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 75px;
+    padding: 12px 0 8px;
+    background: var(--color-bg-base);
+    text-align: center;
+  }
+
+  .flow-label.right {
+    left: auto;
+    right: 0;
+  }
+
+  .flow-label__en {
+    font-size: 8px;
+    letter-spacing: 0.5em;
+    line-height: 1;
+  }
+
+  .flow-label__num {
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 1;
+  }
+
+  /* 画像 */
+  .flow-image {
+    width: 100%;
+    padding: 35px 20px 0 20px;
+    aspect-ratio: 335 / 190;
+    z-index: 5;
+  }
+
+  .flow-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 5%;
+  }
+
+  /* テキスト */
+  .flow-block__lead {
+    position: relative;
+    /* display: flex; */
+    width: 100%;
+    margin: -20px 0 0 35px;
+    border: 1px solid var(--color-line-item);
+    align-items: center;
+    padding: 40px 30px 24px 30px;
+  }
+
+  .flow-block__lead.left {
+    margin: -20px 35px 0 0;
+  }
+
+  .flow-block__lead:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    margin: -1px;
+    border: 1px solid var(--color-line-item);
+    content: "";
+    transform: translate(-6px, -6px);
+    z-index: -1;
+  }
+
+  .flow-block__lead.left:before {
+    transform: translate(6px, -6px);
+  }
+
+  .flow-block__lead-title {
+    font-family: var(--font-serif);
+    color: var(--color-text-sub);
+    font-size: 15px;
+    line-height: 1.2;
+    font-weight: 400;
+  }
+
+  .flow-block__lead-text {
+    font-family: var(--font-base);
+    font-size: 12.5px;
+    line-height: 1.8;
+    font-weight: 300;
+    margin-top: 15px;
+    letter-spacing: 0.2em;
+  }
+
+}
+
+
+@media screen and (min-width: 640px) {
+  /* タブレット用レイアウト 640px以上の範囲に収めるデザインはこの中に記述 */
+  /*==============================================================
+    　　TB_施術の流れ
+  ==============================================================*/
+  
+
+}
+
+@media screen and (min-width: 1024px) {
+  /* パソコン用レイアウト 1024px以上の範囲に収めるデザインはこの中に記述 */
+  /*==============================================================
+    　　PC_施術の流れ
+  ==============================================================*/
+  
+
+
+}
+
+@media screen and (min-width: 1400px) {
+  /* PC全画面用レイアウト 1400px以上の範囲に収めるデザインはこの中に記述 */
+  /*==============================================================
+    　　PC-big_施術の流れ
+  ==============================================================*/
+  
+
+
+}
