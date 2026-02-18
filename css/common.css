@@ -1376,6 +1376,71 @@ html {
     height: 23px;
   }
 
+  /*======== アニメーション ========*/
+  .top-other-header .site-header__brand a,
+  .header__line-link,
+  .hamburger,
+  .site-header__tel-link .tel__num,
+  .container__brand a,
+  .site-header__address__tel,
+  .site-header__sns-box a,
+  .breadcrumbs .item a {
+    transition: all 0.3s ease;
+  }
+
+  .site-nav--sp .nav-list a {
+    width: fit-content;
+    transition: all 0.3s ease;
+  }
+
+  .top-other-header .site-header__brand a:hover,
+  .header__line-link:hover,
+  .hamburger:hover,
+  .site-header__tel-link .tel__num:hover,
+  .container__brand a:hover,
+  .site-nav--sp .nav-list a:hover,
+  .site-header__address__tel:hover,
+  .site-header__sns-box a:hover,
+  .breadcrumbs .item a:hover {
+    opacity: 0.6;
+  }
+
+  /*==============================================================
+    　　PC-big_セクション共通
+  ==============================================================*/
+  /*======== アニメーション ========*/
+  /* ボタン */
+  .more-btn {
+    transition: all 0.4s ease;
+  }
+
+  .more-btn:hover {
+    opacity: 0.6;
+    transform: translateX(5px);
+  }
+
+  /*==============================================================
+    　　PC-big_CONTACT
+  ==============================================================*/
+  .item-tel {
+    border: none;
+    padding: 0;
+  }
+
+  .item-tel a {
+    border: 1px solid var(--color-line-item);
+    padding: 20px 14px 22px 0;
+  }
+
+  /*======== アニメーション ========*/
+  .contact .contact-item a {
+    transition: all 0.3s ease;
+  }
+
+  .contact .contact-item a:hover {
+    opacity: 0.6;
+  }
+
 
   /*==============================================================
     　　PC-big_フッター
